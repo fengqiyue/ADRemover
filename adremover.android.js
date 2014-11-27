@@ -63,6 +63,10 @@
       selector: 'client_ad_dialog',
       type: 'id',
       action: 'remove'
+    }, {
+      selector: 'client_bottom_tip_close j_client_bottom_tip_close',
+      type: 'class',
+      action: 'click'
     }],
 
     'm.taobao.com': [{
