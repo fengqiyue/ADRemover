@@ -65,9 +65,13 @@
       action: 'remove'
     }],
 
-    'm.taobao.com': [{
+    'taobao.com': [{
       selector: 'smartAd-close',
       type: 'id',
+      action: 'click'
+    }, {
+      selector: 'smartAd-close J_smartClose',
+      type: 'class',
       action: 'click'
     }],
 
@@ -187,6 +191,38 @@
 
     'www.tudou.com': [{
       selector: 'closeAppRecom',
+      type: 'id',
+      action: 'click'
+    }],
+
+    'www.tmall.com': [{
+      selector: 'J_GloablSmartBannerClose',
+      type: 'id',
+      action: 'click'
+    }],
+
+    'm.damai.cn': [{
+      selector: 'box bgc4',
+      type: 'class',
+      action: 'click'
+    }, {
+      selector: '#footerDiv > .close',
+      type: 'query',
+      action: 'click'
+    }],
+
+    'm.xiachufang.com': [{
+      selector: '.apps-download > a',
+      type: 'query',
+      action: 'click'
+    }],
+
+    'm.yohobuy.com': [{
+      selector: 'header_layer_close',
+      type: 'id',
+      action: 'click'
+    }, {
+      selector: 'float_layer_close',
       type: 'id',
       action: 'click'
     }]
