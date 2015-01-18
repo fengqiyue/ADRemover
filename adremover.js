@@ -167,6 +167,10 @@
       selector: '#spread > .icon-close',
       type: 'query',
       action: 'click'
+    }, {
+      selector: 'fixedCloseBtn',
+      type: 'id',
+      action: 'click'
     }],
 
     'jd.com': [{
@@ -225,6 +229,42 @@
       selector: 'float_layer_close',
       type: 'id',
       action: 'click'
+    }],
+
+    'm.7wenta.com': [{
+      selector: 'closeHaha',
+      type: 'id',
+      action: 'click'
+    }],
+
+    'm.secoo.com': [{
+      selector: 'closeBt',
+      type: 'id',
+      action: 'click'
+    }],
+
+    'ichuanyi.com': [{
+      selector: 'downloadPopClose',
+      type: 'id',
+      action: 'click'
+    }],
+
+    'm.fang.com': [{
+      selector: 'floatApp',
+      type: 'class',
+      action: 'remove'
+    }],
+
+    'm.tujia.com': [{
+      selector: 'icon-closed',
+      type: 'class',
+      action: 'click'
+    }],
+
+    'xiangqu.com': [{
+      selector: 'app-down-bar',
+      type: 'class',
+      action: 'remove'
     }]
   };
 
@@ -313,6 +353,12 @@
               closeIcon.click();
             }
           });
+        }
+
+        // fuck you, zhong guo dian xin
+        var ad = document.getElementsByTagName('t:d')[0];
+        if (ad) {
+          ad.parentNode.removeChild(ad);
         }
       }, 10);
 
